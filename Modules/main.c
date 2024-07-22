@@ -766,6 +766,8 @@ pymain_exit_error(PyStatus status)
 int
 Py_RunMain(void)
 {
+    printf("Hello Python!\n");
+    fflush(stdout);
     int exitcode = 0;
 
     pymain_run_python(&exitcode);
